@@ -1,0 +1,44 @@
+# ====================================================================
+# 🛡️ COGNITIVE HONEYPOT PROJECT IGNORES
+# ====================================================================
+
+# --- 🔑 SECRETS & KEYS ---
+# Never commit your local keys or environment variables
+.env
+*.pem
+*.key
+host_key*
+captured_creds.json
+
+# --- 🏗️ TERRAFORM ---
+# Local terraform directory (contains provider binaries)
+.terraform/
+# State files (WARNING: These contain sensitive info in plain text)
+*.tfstate
+*.tfstate.backup
+# Variables files (where you might keep your API key locally)
+*.tfvars
+*.tfvars.json
+# Lock file
+.terraform.lock.hcl
+
+# --- 🐍 PYTHON ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+# Virtual Environment (Always reinstall via requirements.txt)
+venv/
+ENV/
+.venv/
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# --- 🖥️ OS & IDE SPECIFIC ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
